@@ -35,6 +35,34 @@ Response Body Error :
 
 ## Login User API
 
+Endpoint : Post /api/users/login
+
+Request Body :
+
+````json
+{
+  "username": "pzn",
+  "password": "rahasia"
+}
+
+Response Body Success :
+
+```json
+{
+    "data" : {
+     "token": "unique-token"
+    }
+}
+````
+
+Response Body Error :
+
+```json
+{
+  "errors": "username and password wrong"
+}
+```
+
 ## Get User API
 
 ## Logout User API
